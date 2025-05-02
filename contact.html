@@ -85,38 +85,48 @@
         </div>
 
         <!-- Contact Form Section -->
-        <section class="bg-white rounded-xl shadow-md p-8 mb-12">
-            <h2 class="text-2xl font-bold text-center text-blue-900 mb-10">Get in Touch</h2>
-            <form action="#" method="POST" class="space-y-6 max-w-2xl mx-auto">
-                <div class="form-group">
-                    <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
-                    <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div class="form-group">
-                    <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
-                    <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div class="form-group">
-                    <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                </div>
-                <div class="form-group">
-                    <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
-                    <select id="subject" name="subject" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                        <option value="general">General Inquiry</option>
-                        <option value="humanitarian">Humanitarian Projects</option>
-                        <option value="energy">Energy Solutions</option>
-                        <option value="digital">Digital Partnerships</option>
-                        <option value="sustainability">Sustainability Planning</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
-                    <textarea id="message" name="message" rows="5" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
-            </form>
+<!-- Contact Form Section -->
+<section class="bg-white rounded-xl shadow-md p-8 mb-12">
+    <h2 class="text-2xl font-bold text-center text-blue-900 mb-10">Get in Touch</h2>
+    
+    <!-- Error messages display area -->
+    <div id="error-messages" class="mb-6 hidden max-w-2xl mx-auto">
+        <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+            <ul id="error-list" class="list-disc pl-5"></ul>
+        </div>
+    </div>
+    
+    <form action="process_contact.php" method="POST" class="space-y-6 max-w-2xl mx-auto">
+        <div class="form-group">
+            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+            <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div class="form-group">
+            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+            <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div class="form-group">
+            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        </div>
+        <div class="form-group">
+            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+            <select id="subject" name="subject" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Humanitarian Projects">Humanitarian Projects</option>
+                <option value="Energy Solutions">Energy Solutions</option>
+                <option value="Digital Partnerships">Digital Partnerships</option>
+                <option value="Sustainability Planning">Sustainability Planning</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+            <textarea id="message" name="message" rows="5" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition duration-300">Send Message</button>
+    </form>
+</section>
         </section>
 
         <!-- Contact Information Section -->
