@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Deusel Consultants Inc.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #a5b4fc 0%, #93c5fd 100%);
+        }
+        .hero-container {
+            background-color: #f0f4f8;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+        .search-container {
+            position: relative;
+        }
+        .search-button {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .rating-stars {
+            color: #fbbf24;
+        }
+        .dot-separator {
+            height: 2px;
+            background: repeating-linear-gradient(to right, #cbd5e1 0%, #cbd5e1 8%, transparent 8%, transparent 16%);
+        }
+        /* Custom navbar styling to match the image */
+        .custom-navbar {
+            background-color: #002147; /* Dark blue color from the image */
+            padding: 1rem 2rem;
+        }
+        .nav-logo {
+            color: #4F94CD; /* Blue color for Deusel text */
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .nav-links a {
+            color: white;
+            margin: 0 1rem;
+            font-weight: 500;
+        }
+        .book-now-btn {
+            background-color: #4169E1; /* Royal blue for the button */
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .book-now-btn:hover {
+            background-color: #3457D5;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gradient-to-br from-blue-100 to-blue-200 min-h-screen">
+    <!-- Custom Navbar to match the image -->
+    <header class="custom-navbar w-full">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="img/dlogo.png" alt="Deusel Logo" class="h-10 w-10 mr-2">
+                <span class="nav-logo">Deusel</span>
+            </div>
+            <nav class="hidden md:flex nav-links">
+                <a href="index.html">Home</a>
+                <div class="relative group inline-block">
+                    <a href="services.html" class="flex items-center">
+                        Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </a>
+<div class="absolute left-0 top-full pt-2 hidden group-hover:block z-10">
+    <div class="bg-[#002147] shadow-lg rounded-md p-4 w-48">
+        <a href="humanitarian-services.html" class="block py-2 text-white hover:text-green-200">Humanitarian Projects</a>
+        <a href="energy-services.html" class="block py-2 text-white hover:text-green-200">Energy Solutions</a>
+        <a href="digital-services.html" class="block py-2 text-white hover:text-green-200">Digital Partnerships</a>
+        <a href="sustainability-services.html" class="block py-2 text-white hover:text-green-200">Sustainability Planning</a>
+    </div>
+</div>
+                </div>
+                <a href="mission.html">Mission</a>
+                <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="contact.html" class="hidden md:block book-now-btn">Book Now</a>
+        <button class="md:hidden text-white">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+    </div>
+</header>
+
+<div class="container mx-auto px-4 py-8 max-w-6xl">
+    <!-- Main Content Card -->
+    <div class="hero-container p-8 mb-12">
+        <!-- Hero Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                    About <br>Deucel Consultants
+                </h1>
+                <p class="text-gray-600 mb-8 text-lg">
+                    We are a dedicated team of professionals committed to driving sustainable change through innovative solutions and strategic partnerships.
+                </p>
+                
+                <!-- Separator Line -->
+                <div class="dot-separator w-full mb-6"></div>
+                
+                <!-- Company Stats -->
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-gray-700 font-medium">Global Impact</p>
+                        <p class="text-gray-600">Transforming Industries Since 2015</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="rating-stars mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-2xl font-bold">4.9</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About Image -->
+            <div class="relative">
+                <div class="bg-blue-100 rounded-full w-[400px] h-[400px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0"></div>
+                <div class="relative z-10 w-[400px] h-[400px] mx-auto overflow-hidden">
+                    <img src="img/contact_img.jpg" alt="Deusel Team" class="w-full h-full object-cover rounded-full">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Our Story Section -->
+    <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+        <h2 class="text-2xl font-bold text-center text-blue-900 mb-8">Our Story</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <p class="text-gray-600 mb-4">
+                    Deucel Consultants Inc. is grounded in the principle that collaboration, innovation, and sustainability are essential for driving positive global change. We are committed to addressing financial, technological, and environmental challenges by empowering impactful projects, fostering strategic partnerships, and promoting sustainable practices.
+                </p>
+                <p class="text-gray-600 mb-4">
+                    We stand at the intersection of humanitarian efforts, technological innovation, and environmental sustainability. Our commitment is to facilitate the start-up costs for projects that contribute to a better world, particularly in underserved communities.
+                </p>
+                <p class="text-gray-600">
+                    We believe in aligning purpose with profitability to create a lasting impact for our clients and stakeholders while prioritizing environmental and social responsibility.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <span class="text-3xl font-bold text-blue-600 block mb-2">8+</span>
+                    <p class="text-gray-700">Years of Experience</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <span class="text-3xl font-bold text-blue-600 block mb-2">50+</span>
+                    <p class="text-gray-700">Projects Completed</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <span class="text-3xl font-bold text-blue-600 block mb-2">20+</span>
+                    <p class="text-gray-700">Global Partners</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <span class="text-3xl font-bold text-blue-600 block mb-2">30%</span>
+                    <p class="text-gray-700">Average Carbon Reduction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Our Focus Areas Section -->
+    <section class="mb-16 bg-white rounded-xl shadow-md p-8">
+        <h2 class="text-2xl font-bold text-center text-blue-900 mb-8">Our Focus Areas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-blue-50 p-6 rounded-lg">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-hands-helping text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-blue-900 mb-2 text-center">Midwifing Start-Up Costs for Humanitarian Projects</h3>
+                <p class="text-gray-600 text-center">
+                    Providing financial and advisory support to launch humanitarian initiatives that improve lives and communities. We act as midwives to bring essential initiatives to life, ensuring they have the right foundation and resources to succeed.
+                </p>
+            </div>
+            
+            <div class="bg-blue-50 p-6 rounded-lg">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-leaf text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-blue-900 mb-2 text-center">Reducing Carbon Footprint in Energy Sectors</h3>
+                <p class="text-gray-600 text-center">
+                    Championing sustainable energy solutions and environmental consciousness to combat climate change. Through strategic partnerships and innovative solutions, we aim to create a positive impact on global efforts to combat climate change.
+                </p>
+            </div>
+            
+            <div class="bg-blue-50 p-6 rounded-lg">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-network-wired text-blue-600 text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-blue-900 mb-2 text-center">Enhancing Productivity Through Digital Partnerships</h3>
+                <p class="text-gray-600 text-center">
+                    Leveraging technology and collaboration to optimize efficiency, scalability, and innovation across industries. Our approach uses cutting-edge technology to streamline processes, reduce waste, and improve service delivery.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Our Values Section -->
+    <section class="mb-16">
+        <h2 class="text-2xl font-bold text-center text-blue-900 mb-10">Our Core Values</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-leaf text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2 text-center">Sustainability</h3>
+                    <p class="text-gray-600 text-center">
+                        We are committed to environmental stewardship in all our operations and recommendations, prioritizing solutions that minimize ecological impact.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2 text-center">Innovation</h3>
+                    <p class="text-gray-600 text-center">
+                        We continuously explore cutting-edge technologies and methodologies to deliver forward-thinking solutions to complex challenges.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                <div class="p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2 text-center">Collaboration</h3>
+                    <p class="text-gray-600 text-center">
+                        We believe in the power of teamwork and partnership, working closely with clients and stakeholders to achieve shared goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Our Expertise Section -->
+<section class="mb-16 bg-white rounded-xl shadow-md p-8">
+    <h2 class="text-2xl font-bold text-center text-blue-900 mb-10">Our Expertise & Capabilities</h2>
+    
+    <!-- Expertise Areas -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-blue-50 p-6 rounded-lg">
+            <div class="flex items-start mb-4">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-solar-panel text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Renewable Energy Solutions</h3>
+                    <p class="text-gray-600">
+                        Our team brings specialized knowledge in solar, wind, and hydroelectric technologies, offering comprehensive planning and implementation strategies tailored to diverse environments and needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-blue-50 p-6 rounded-lg">
+            <div class="flex items-start mb-4">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-chart-line text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Energy Efficiency Analysis</h3>
+                    <p class="text-gray-600">
+                        We employ advanced analytical tools and methodologies to identify energy inefficiencies and develop targeted optimization strategies that reduce consumption and operational costs.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-blue-50 p-6 rounded-lg">
+            <div class="flex items-start mb-4">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-leaf text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Sustainability Planning</h3>
+                    <p class="text-gray-600">
+                        Our consultants are skilled in developing comprehensive sustainability roadmaps that align with organizational goals while meeting regulatory requirements and industry best practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-blue-50 p-6 rounded-lg">
+            <div class="flex items-start mb-4">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-hands-helping text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold text-blue-900 mb-2">Project Funding Facilitation</h3>
+                    <p class="text-gray-600">
+                        We specialize in connecting humanitarian and sustainability projects with appropriate funding sources, including grants, impact investors, and public-private partnerships.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Our Approach -->
+    <div class="bg-blue-100 p-8 rounded-lg mb-12">
+        <h3 class="text-xl font-bold text-center text-blue-900 mb-6">Our Approach</h3>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-blue-600">1</span>
+                </div>
+                <h4 class="font-bold text-blue-800 mb-2">Assessment</h4>
+                <p class="text-gray-700 text-sm">Comprehensive analysis of current systems and needs</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-blue-600">2</span>
+                </div>
+                <h4 class="font-bold text-blue-800 mb-2">Strategy</h4>
+                <p class="text-gray-700 text-sm">Tailored solution design with measurable objectives</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-blue-600">3</span>
+                </div>
+                <h4 class="font-bold text-blue-800 mb-2">Implementation</h4>
+                <p class="text-gray-700 text-sm">Expert execution with continuous stakeholder engagement</p>
+            </div>
+            
+            <div class="text-center">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-2xl font-bold text-blue-600">4</span>
+                </div>
+                <h4 class="font-bold text-blue-800 mb-2">Optimization</h4>
+                <p class="text-gray-700 text-sm">Ongoing monitoring and refinement for maximum impact</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Tools & Technologies -->
+    <h3 class="text-xl font-bold text-center text-blue-900 mb-6">Tools & Technologies We Leverage</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="p-4">
+            <div class="bg-blue-50 p-4 rounded-lg h-full flex flex-col items-center justify-center">
+                <i class="fas fa-analytics text-blue-600 text-2xl mb-3"></i>
+                <span class="text-gray-700">Energy Modeling Software</span>
+            </div>
+        </div>
+        <div class="p-4">
+            <div class="bg-blue-50 p-4 rounded-lg h-full flex flex-col items-center justify-center">
+                <i class="fas fa-project-diagram text-blue-600 text-2xl mb-3"></i>
+                <span class="text-gray-700">Project Management Tools</span>
+            </div>
+        </div>
+        <div class="p-4">
+            <div class="bg-blue-50 p-4 rounded-lg h-full flex flex-col items-center justify-center">
+                <i class="fas fa-chart-pie text-blue-600 text-2xl mb-3"></i>
+                <span class="text-gray-700">Data Analytics Platforms</span>
+            </div>
+        </div>
+        <div class="p-4">
+            <div class="bg-blue-50 p-4 rounded-lg h-full flex flex-col items-center justify-center">
+                <i class="fas fa-file-contract text-blue-600 text-2xl mb-3"></i>
+                <span class="text-gray-700">Compliance Frameworks</span>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Call to Action -->
+    <section class="bg-blue-900 text-white rounded-xl shadow-lg p-8 text-center mb-16">
+        <h2 class="text-3xl font-bold mb-4">Join Us in Creating a Sustainable Future</h2>
+        <p class="text-blue-100 mb-8 max-w-2xl mx-auto">Partner with Deucel to develop innovative solutions that drive positive change for your organization and the planet.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="contact.html" class="bg-white text-blue-900 hover:bg-blue-100 px-8 py-3 rounded-full font-medium transition duration-300">Contact Us</a>
+            <a href="services.html" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-full font-medium transition duration-300">Our Services</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="bg-white rounded-xl shadow-md p-8">
+    <footer class="bg-white rounded-xl shadow-md p-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="md:col-span-1">
+                <div class="flex flex-col items-center md:items-start mb-4">
+                    <img src="img/dlogo.png" alt="Deusel Logo" class="h-16 w-16 mb-2">
+                    <h3 class="text-xl font-bold text-blue-900">Deucel</h3>
+                </div>
+                <p class="text-gray-600 mb-4 text-center md:text-left">Empowering organizations with sustainable energy solutions for a greener future.</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-1">
+                <h4 class="text-lg font-bold text-gray-900 mb-4 text-center md:text-left">Quick Links</h4>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li><a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-blue-600">About Us</a></li>
+                    <li><a href="services.html" class="text-gray-600 hover:text-blue-600">Services</a></li>
+                    <li><a href="mission.html" class="text-gray-600 hover:text-blue-600">Our Mission</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-1">
+                <h4 class="text-lg font-bold text-gray-900 mb-4 text-center md:text-left">Services</h4>
+                <ul class="space-y-2 text-center md:text-left">
+                    <li><a href="services.html#energy" class="text-gray-600 hover:text-blue-600">Energy Consulting</a></li>
+                    <li><a href="services.html#renewable" class="text-gray-600 hover:text-blue-600">Renewable Solutions</a></li>
+                    <li><a href="services.html#carbon" class="text-gray-600 hover:text-blue-600">Carbon Reduction</a></li>
+                    <li><a href="services.html#sustainability" class="text-gray-600 hover:text-blue-600">Sustainability Planning</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-1">
+                <h4 class="text-lg font-bold text-gray-900 mb-4 text-center md:text-left">Contact Info</h4>
+                <ul class="space-y-3 text-center md:text-left">
+                    <li class="flex flex-col md:flex-row md:items-start justify-center md:justify-start">
+                        <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-0 md:mr-3 mb-2 md:mb-0"></i>
+                        <span class="text-gray-600">103-195 Kincora Glen Road NW, Calgary</span>
+                    </li>
+                    <li class="flex flex-col md:flex-row md:items-start justify-center md:justify-start">
+                        <i class="fas fa-phone text-blue-600 mt-1 mr-0 md:mr-3 mb-2 md:mb-0"></i>
+                        <span class="text-gray-600">+1 825-883-7730</span>
+                    </li>
+                    <li class="flex flex-col md:flex-row md:items-start justify-center md:justify-start">
+                        <i class="fas fa-envelope text-blue-600 mt-1 mr-0 md:mr-3 mb-2 md:mb-0"></i>
+                        <span class="text-gray-600">info@deuselconsult.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+<div class="border-t border-gray-200 pt-6 text-center">
+    <p class="text-gray-600">&copy; 2025 Deusel Consultants Inc. All rights reserved.</p>
+    <p class="text-sm text-gray-500 mt-2">Committed to sustainable solutions and environmental stewardship</p>
+</div>
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- JavaScript for Chart -->
+    <script>
+        // Initialize charts when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // You can add any specific JavaScript for the about page here
+            
+            // Example: Animate elements on scroll
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.transition-transform');
+                elements.forEach(element => {
+                    const position = element.getBoundingClientRect();
+                    if(position.top < window.innerHeight) {
+                        element.style.opacity = 1;
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Initial check
+        });
+    </script>
+</body>
+</html>
